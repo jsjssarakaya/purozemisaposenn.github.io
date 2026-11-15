@@ -1,0 +1,59 @@
+<div class="image-container">
+  <img src="https://ik.imagekit.io/7db3u18tol/IMG_8089_hKnzhTk_4.webp" alt="https://ik.imagekit.io/7db3u18tol/IMG_8089_hKnzhTk_4.webp" class="base-image">
+  
+ 
+  <div class="touch-spot" style="top: 32%; left: 10%; width: 20%; height: 20%;" data-name="超匿名　この画像を作った人"></div>
+  
+ 
+  <div class="touch-spot" style="top: 10%; left: 8%; width: 20%; height: 20%;" data-name="マイクラだあよ　最近は見ない"></div>
+  
+
+  <div class="touch-spot" style="top: 55%; left: 5%; width: 15%; height: 35%;" data-name="IKEAにいけあ　ゲイ介護を仕事としている人　自身はゲイではないらしい"></div>
+  <div class="touch-spot" style="top: 36%; left: 31%; width: 10%; height: 25%;" data-name="魚のもなか　ここの先祖の先祖？の管理者(暇ゼ民掲示板)"></div>
+  <div class="touch-spot" style="top: 60%; left: 27%; width: 10%; height: 15%;" data-name="ひよこ　先祖(メタライフ)の管理者だった人"></div>
+  <div class="touch-spot" style="top: 60%; left: 27%; width: 10%; height: 15%;" data-name="ひよこ　先祖(メタライフ)の管理者だった人"></div>
+  <div class="touch-spot" style="top: 72%; left: 32%; width: 10%; height: 5%;" data-name="パピコ　よくわからない人(？)"></div>
+  <div class="touch-spot" style="top: 75%; left: 60%; width: 10%; height: 15%;" data-name="超匿名の化身"></div>
+  <div class="touch-spot" style="top: 52%; left: 45%; width: 20%; height: 23%;" data-name="Ignus 変態 プロゼミまともに触ってなさそう"></div>
+  <div class="touch-spot" style="top: 25%; left: 40%; width: 10%; height: 25%;" data-name="あ　サポセンメンバーかはわかららない　プロゼミを地道に頑張っている人"></div>
+  <div class="touch-spot" style="top: 25%; left: 51%; width: 10%; height: 25%;" data-name="らり　よくわからない人2"></div>
+  <div class="touch-spot" style="top: 77%; left: 32%; width: 15%; height: 15%;" data-name="だんぼーる　ブルアカファン　一応プロゼミはやっている"></div>
+  <div class="touch-spot" style="top: 60%; left: 68%; width: 25%; height: 15%;" data-name="ざんへの　煮さんミームの発祥　頭が良い"></div>
+  <div class="touch-spot" style="top: 41%; left: 83%; width: 10%; height: 18%;" data-name="めそ　強靭な狂人"></div>
+  <div class="touch-spot" style="top: 32%; left: 60%; width: 10%; height: 19%;" data-name="わん　よくわからない人3"></div>
+  <div class="touch-spot" style="top: 32%; left: 72%; width: 10%; height: 19%;" data-name="かるびの握り　t いろもん制作が趣味"></div>
+</div>
+
+<style>
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+  .base-image {
+    width: 100%;
+    display: block;
+  }
+
+  .touch-spot {
+    position: absolute;
+ cursor: pointer;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+
+  
+  }
+</style>
+
+<script>
+ 
+  const spots = document.querySelectorAll('.touch-spot');
+
+  spots.forEach((spot) => {
+    spot.addEventListener('click', () => {
+    
+      const areaName = spot.dataset.name;
+      
+      alert(`${areaName} 　とても良い人ですよ`);
+    });
+  });
+</script>
